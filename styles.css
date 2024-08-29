@@ -25,7 +25,7 @@ a.button {
 }
 a.button:hover {background-color:#efefef;}
 a.button.active {
-	background-color:#ccddff;
+	background-color:#a7cba9;
 	cursor:default;
 	font-weight:bold;
 }
