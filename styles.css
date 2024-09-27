@@ -32,4 +32,5 @@ a.button.active {
 
 footer .container {display:flex;justify-content:space-between;}
 footer a.contact-email {text-decoration:none;}
+.url-spacer {padding:0 1px;}
 [data-lang='en'] {display:none;}
