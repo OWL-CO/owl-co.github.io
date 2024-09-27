@@ -1,10 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Owl Co</title>
-  <link rel="stylesheet" type="text/css" href="styles.css" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Owl Co</title>
+
+<!-- FONTS -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kalam:wght@300;400;700&family=Mochiy+Pop+P+One&display=swap" rel="stylesheet">
+
+<!-- STYLES -->
+<link rel="stylesheet" type="text/css" href="styles.css" />
+
 <!-- SCRIPTS -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script type="text/javascript">
@@ -30,23 +38,27 @@ $(document).ready(function(){
 </script>
 <!-- END SCRIPTS -->
 </head>
+
 <body>
   <header><div class="container">
   <!-- header content -->
-    <h1>Owl Co</h1>
-    <h2 data-lang="en">From local to global with English</h2>
-    <h2 data-lang="jp">ローカルからグローバルへ、英語で</h2>
+    <div id="logo-block">
+      <img id="header-logo" src="./images/logo-lockup.png" />
+      <h1 data-lang="en">From local to global with English</h1>
+      <h1 data-lang="jp">ローカルからグローバルへ、英語で</h1>
+    </div>
+
     <div class="toggle" data-rel="lang">
       <a class="button active" data-value="jp">日本語</a>
       <a class="button" data-value="en">English</a>
     </div>
   </div></header>
 
-  <section id="section-1"><div class="container">
-    <h3 data-lang="en">Meet your customers where they are</h3>
-    <h3 data-lang="jp">お客様のニーズに応えるために</h3>
-    <h4 data-lang="en">Localization for businesses<h4>
-    <h4 data-lang="jp">ビジネスのためのローカリゼーション</h4>
+  <section id="section-1" class="bg-blue"><div class="container">
+    <h2 class="section-title" data-lang="en">Meet your customers where they are</h2>
+    <h2 class="section-title" data-lang="jp">お客様のニーズに応えるために</h2>
+    <h3 class="section-subtitle" data-lang="en">Localization for businesses<h3>
+    <h3 class="section-subtitle" data-lang="jp">ビジネスのためのローカリゼーション</h3>
 
     <p data-lang="en">Show the world the amazing things you can do by expanding your market to over one billion new people. OWL Co will help you determine how best to incorporate English into your business to maximize growth.</p>
     <p data-lang="jp">貴社の素晴らしいサービスや製品を、世界中にアピールしましょう。市場を10億人以上の新しい顧客に拡大するお手伝いをします。OWL Coは、英語をどのようにビジネスに取り入れて成長を最大化するか、最適な方法を見つけ出します。</p>
@@ -73,18 +85,18 @@ $(document).ready(function(){
     </ul>
   </div></section>
 
-  <section id="section-2"><div class="container">
+  <section id="section-2" class="big-statement"><div class="container">
   <!-- Maximize your impact -->
-    <h3 data-lang="en">maximize your impact with the world's most spoken language.</h3>
-    <h3 data-lang="jp">世界で最も話されている言語で影響力を最大化する</h3>
+    <h2 data-lang="en">Maximize your impact with the world's most spoken language</h2>
+    <h2 data-lang="jp">世界で最も話されている言語で影響力を最大化する</h2>
   </div></section>
 
-  <section id="section-3"><div class="container">
+  <section id="section-3" class="bg-orange"><div class="container">
   <!-- Translation for creatives -->
-    <h3 data-lang="en">Your words, beautifully crafted</h3>
-    <h3 data-lang="jp">言葉を美しく伝える</h3>
-    <h4 data-lang="en">Translation support<h4>
-    <h4 data-lang="jp">翻訳サポート</h4>
+    <h2 class="section-title" data-lang="en">Your words, beautifully crafted</h2>
+    <h2 class="section-title" data-lang="jp">言葉を美しく伝える</h2>
+    <h3 class="section-subtitle" data-lang="en">Translation support<h3>
+    <h3 class="section-subtitle" data-lang="jp">翻訳サポート</h3>
 
     <ul data-lang="en">
       <li>Game script localization for Western Markets</li>
@@ -108,10 +120,10 @@ $(document).ready(function(){
 
   <section id="section-4"><div class="container">
   <!-- Lessons -->
-    <h3 data-lang="en">English for life</h3>
-    <h3 data-lang="jp">人生に役立つ英語</h3>
-    <h4 data-lang="en">private lessons<h4>
-    <h4 data-lang="jp">プライベートレッスン</h4>
+    <h2 class="section-title" data-lang="en">English for life</h2>
+    <h2 class="section-title" data-lang="jp">人生に役立つ英語</h2>
+    <h3 class="section-subtitle" data-lang="en">private lessons<h3>
+    <h3 class="section-subtitle" data-lang="jp">プライベートレッスン</h3>
 
     <p data-lang="en">A bilingual Japanese-English speaker is worth 34% more on average. Our programs are tailored precisely to your organization to  help you learn as quickly as possible</p>
     <p data-lang="jp">バイリンガルの日本語と英語話者は、平均して34％多くの価値があります。私たちのプログラムは、組織に合わせて精密に調整され、できるだけ早く学習成果を得られるようサポートします。</p>
@@ -144,7 +156,7 @@ $(document).ready(function(){
 
   <section id="section-5"><div class="container">
   <!-- second section content -->
-    <!-- <h3>Heading</h3> -->
+    <!-- <h2>Heading</h2> -->
     <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> -->
   </div></section>
 
