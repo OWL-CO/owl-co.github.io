@@ -138,6 +138,7 @@ img#header-logo {
   z-index:1;
 }
 .section-subtitle[data-lang="jp"] {
+  font-family:"Mochiy Pop P One", cursive;
   font-size:20px;
 }
 
