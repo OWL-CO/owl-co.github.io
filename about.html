@@ -5,6 +5,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Owl Co</title>
   <link rel="stylesheet" type="text/css" href="styles.css" />
+<!-- SCRIPTS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+
+  $('.toggle').on('click', function(e){
+    console.log('click');
+    /* abort if active */
+    if($(e.target).hasClass('active')) { return; }
+
+    /* update active button */
+    $(e.target).siblings().removeClass('active');
+    $(e.target).addClass('active');
+
+    /* hide all tagged elements related to the toggle */
+    $('[data-'+$(this).attr('data-rel')+']').hide();
+
+    /* show the tagged elements that match the selected button */
+    $('[data-'+$(this).attr('data-rel')+'='+$(e.target).attr('data-value')+']').show();
+  });
+
+});
+</script>
+<!-- END SCRIPTS -->
 </head>
 <body>
   <header><div class="container">
