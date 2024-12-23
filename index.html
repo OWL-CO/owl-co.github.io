@@ -1,169 +1,43 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Owl Co</title>
-
-<!-- FONTS -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kalam:wght@300;400;700&family=Mochiy+Pop+P+One&display=swap" rel="stylesheet">
-
-<!-- STYLES -->
-<link rel="stylesheet" type="text/css" href="styles.css" />
-
-<!-- SCRIPTS -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-<script type="text/javascript">
-$(document).ready(function(){
-
-  $('.toggle').on('click', function(e){
-    console.log('click');
-    /* abort if active */
-    if($(e.target).hasClass('active')) { return; }
-
-    /* update active button */
-    $(e.target).siblings().removeClass('active');
-    $(e.target).addClass('active');
-
-    /* hide all tagged elements related to the toggle */
-    $('[data-'+$(this).attr('data-rel')+']').hide();
-
-    /* show the tagged elements that match the selected button */
-    $('[data-'+$(this).attr('data-rel')+'='+$(e.target).attr('data-value')+']').show();
-  });
-
-});
-</script>
-<!-- END SCRIPTS -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OWL Consulting LLC</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
-
-<body>
-  <header><div class="container">
-  <!-- header content -->
-    <div id="logo-block">
-      <img id="header-logo" src="./images/logo-lockup.png" />
-      <h1 data-lang="en">From local to global with English</h1>
-      <h1 data-lang="jp">ローカルからグローバルへ、英語で</h1>
-    </div>
-
-    <div class="toggle" data-rel="lang">
-      <a class="button active" data-value="jp">日本語</a>
-      <a class="button" data-value="en">English</a>
-    </div>
-  </div></header>
-
-  <section id="section-1" class="bg-blue"><div class="container">
-    <h2 class="section-title" data-lang="en">Meet your customers where they are</h2>
-    <h2 class="section-title" data-lang="jp">お客様のニーズに応えるために</h2>
-    <h3 class="section-subtitle" data-lang="en">Localization for businesses<h3>
-    <h3 class="section-subtitle" data-lang="jp">ビジネスのためのローカリゼーション</h3>
-
-    <p data-lang="en">Show the world the amazing things you can do by expanding your market to over one billion new people. OWL Co will help you determine how best to incorporate English into your business to maximize growth.</p>
-    <p data-lang="jp">貴社の素晴らしいサービスや製品を、世界中にアピールしましょう。市場を10億人以上の新しい顧客に拡大するお手伝いをします。OWL Coは、英語をどのようにビジネスに取り入れて成長を最大化するか、最適な方法を見つけ出します。</p>
-
-    <ul data-lang="en">
-      <li>Japanese-English Translation and localization</li>
-      <li>Corporate training sessions for sales professionals and customer service representatives</li>
-      <li>Document editing and proofreading, including pitch decks, event materials, and company blogs</li>
-      <li>English localization for product packaging and marketplace listings</li>
-      <li>Press releases for global media outlets and international audiences</li>
-      <li>Translation and of company handbooks and internal documents</li>
-      <li>Customized English coaching for sales teams targeting foreign markets</li>
-      <li>Translation of product catalogs and brochures for English-speaking consumers</li>
-    </ul>
-    <ul data-lang="jp">
-      <li>日英翻訳・ローカリゼーション</li>
-      <li>営業担当者やカスタマーサービス担当者向けの企業トレーニング</li>
-      <li>ピッチ資料、イベント資料、会社ブログの編集および校正</li>
-      <li>製品パッケージやオンライン販売用リストの英語ローカリゼーション</li>
-      <li>国際的なメディア向けプレスリリース作成</li>
-      <li>会社のハンドブックや内部文書の翻訳</li>
-      <li>外国市場を狙った営業チーム向けカスタマイズ英語コーチング</li>
-      <li>英語話者向け商品カタログやパンフレットの翻訳</li>
-    </ul>
-  </div></section>
-
-  <section id="section-2" class="big-statement"><div class="container">
-  <!-- Maximize your impact -->
-    <h2 data-lang="en">Maximize your impact with the world's most spoken language</h2>
-    <h2 data-lang="jp">世界で最も話されている言語で影響力を最大化する</h2>
-  </div></section>
-
-  <section id="section-3" class="bg-orange"><div class="container">
-  <!-- Translation for creatives -->
-    <h2 class="section-title" data-lang="en">Your words, beautifully crafted</h2>
-    <h2 class="section-title" data-lang="jp">言葉を美しく伝える</h2>
-    <h3 class="section-subtitle" data-lang="en">Translation support<h3>
-    <h3 class="section-subtitle" data-lang="jp">翻訳サポート</h3>
-
-    <ul data-lang="en">
-      <li>Game script localization for Western Markets</li>
-      <li>Video subtitle and creation and translation</li>
-      <li>Review and editing for film and advertisement scripts that include English phrases or sections</li>
-      <li>English copy editing for exhibition catalogs and promotional brochures</li>
-      <li>Script translation for animation and web series targeting English-speaking audiences</li>
-      <li>Review and editing of influencer and social media content for international collaborations</li>
-      <li>Manga translation and localization</li>
-    </ul>
-    <ul data-lang="jp">
-      <li>西洋市場向けゲームシナリオのローカリゼーション</li>
-      <li>動画の字幕作成と翻訳</li>
-      <li>映画や広告スクリプトの英語部分やセクションのレビューと編集</li>
-      <li>展示会カタログや販促パンフレットの英語校正</li>
-      <li>英語圏の視聴者を対象としたアニメやWebシリーズのスクリプト翻訳</li>
-      <li>インフルエンサーや国際コラボレーション向けのSNS投稿のレビューと編集</li>
-      <li>漫画の翻訳・ローカリゼーション</li>
-    </ul>
-  </div></section>
-
-  <section id="section-4"><div class="container">
-  <!-- Lessons -->
-    <h2 class="section-title" data-lang="en">English for life</h2>
-    <h2 class="section-title" data-lang="jp">人生に役立つ英語</h2>
-    <h3 class="section-subtitle" data-lang="en">private lessons<h3>
-    <h3 class="section-subtitle" data-lang="jp">プライベートレッスン</h3>
-
-    <p data-lang="en">A bilingual Japanese-English speaker is worth 34% more on average. Our programs are tailored precisely to your organization to  help you learn as quickly as possible</p>
-    <p data-lang="jp">バイリンガルの日本語と英語話者は、平均して34％多くの価値があります。私たちのプログラムは、組織に合わせて精密に調整され、できるだけ早く学習成果を得られるようサポートします。</p>
-
-    <ul data-lang="en">
-      <li>Private test cram sessions</li>
-      <li>Personalized pronunciation coaching sessions</li>
-      <li>Individual and group tutoring</li>
-      <li>Customized English study plans for self-learners</li>
-      <li>Topic-based English lessons</li>
-      <li>Intensive conversational English courses</li>
-      <li>Weekly English study support</li>
-      <li>Interview preparation coaching in English</li>
-      <li>English presentation and public speaking practice</li>
-      <li>Editing and proofreading lessons for academic papers</li>
-    </ul>
-    <ul data-lang="jp">
-      <li>テスト対策のプライベートレッスン</li>
-      <li>発音矯正の個別指導</li>
-      <li>個別およびグループ指導</li>
-      <li>自己学習者向けカスタマイズ英語学習プラン</li>
-      <li>テーマ別の英語レッスン</li>
-      <li>集中英会話レッスン</li>
-      <li>週ごとの英語学習サポート</li>
-      <li>英語での面接対策コーチング</li>
-      <li>英語プレゼンテーションおよびスピーチの練習</li>
-      <li>学術論文の編集および校正レッスン</li>
-    </ul>
-  </div></section>
-
-  <section id="section-5"><div class="container">
-  <!-- second section content -->
-    <!-- <h2>Heading</h2> -->
-    <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> -->
-  </div></section>
-
-  <footer><div class="container">
-  <!-- footer content -->
-    <a href="mailto:hello@owlco.jp" class="contact-email">Hello<span class="url-spacer">@</span>OwlCo<span class="url-spacer">.</span>jp</a>
-    <span id="copyright">Owl Consulting LLC &copy; 2024</span>
-  </div></footer>
+<body class="english">
+  <div class="container">
+    <header class="header">
+      <div class="logo">
+        <a id="logo-link" href="javascript:void(0);">
+          <img id="logo-image" src="images/logo-black.png" alt="OWL Consulting LLC Logo">
+        </a>
+      </div>
+      <div class="slogan">
+        <p id="slogan-text">From Local to Global, in English</p>
+      </div>
+    </header>
+    <main>
+      <button id="toggle-language" class="toggle-button">日本語</button>
+      <section class="contact">
+        <h2 id="contact-heading">Contact Us</h2>
+        <form action="https://formspree.io/f/mpwzegbo" method="POST">
+          <label for="name" id="name-label">Name:</label>
+          <input type="text" id="name" name="name" placeholder="Your Name" required>
+          <label for="email" id="email-label">Email:</label>
+          <input type="email" id="email" name="email" placeholder="Your Email" required>
+          <label for="message" id="message-label">Message:</label>
+          <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+          <button type="submit" class="cta-button" id="send-button">Send</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2024 OWL Consulting LLC. All rights reserved.</p>
+    </footer>
+  </div>
+  <script src="js/script.js"></script>
 </body>
 </html>
