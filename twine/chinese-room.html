@@ -9,21 +9,21 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play The Chinese Room.</tw-noscript></noscript></tw-story>
-<tw-storydata name="The Chinese Room" startnode="3" creator="Twine" creator-version="2.10.0" format="Harlowe" format-version="3.3.9" ifid="66AE5B9A-24F4-4DE2-AC65-8C4882361518" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="Target" color="orange"></tw-tag><tw-tag name="User" color="blue"></tw-tag><tw-passagedata pid="1" name="User" tags="User" position="400,300" size="100,100">(text-colour:blue)[
+<tw-storydata name="The Chinese Room" startnode="3" creator="Twine" creator-version="2.10.0" format="Harlowe" format-version="3.3.9" ifid="66AE5B9A-24F4-4DE2-AC65-8C4882361518" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="Target" color="orange"></tw-tag><tw-tag name="User" color="blue"></tw-tag><tw-passagedata pid="1" name="ユーザー" tags="User" position="400,300" size="100,100">(text-colour:blue)[
 ヘロー `(Hello、helo)`
 ハイ `(Hi、hai)`
 ヘイ `(Hey、hei)`
 ]
 意味：こんにちは
 
-(t8n-time:0.3s)[[返事-&gt;Target response]]</tw-passagedata><tw-passagedata pid="2" name="Target" tags="Target" position="700,300" size="100,100">(text-colour:orange)[
+(t8n-time:0.3s)[[返事-&gt;Target response]]</tw-passagedata><tw-passagedata pid="2" name="お客さん" tags="Target" position="700,300" size="100,100">(text-colour:orange)[
 ヘロー `(Hello、helo)`
 ハイ `(Hi、hai)`
 ヘイ `(Hey、hei)`
 ]
 意味：こんにちは
-(t8n-time:0.3s)[[返事-&gt;User response]]</tw-passagedata><tw-passagedata pid="3" name="Initialize" tags="" position="575,150" size="100,100">(t8n-time:0.3s)[[User-&gt;User]]
-(t8n-time:0.3s)[[Target-&gt;Target]]</tw-passagedata><tw-passagedata pid="4" name="User response" tags="User" position="700,425" size="100,100">(text-colour:blue)[
+(t8n-time:0.3s)[[返事-&gt;User response]]</tw-passagedata><tw-passagedata pid="3" name="Initialize" tags="" position="550,150" size="100,100">(t8n-time:0.3s)[[ユーザー-&gt;ユーザー]]
+(t8n-time:0.3s)[[お客さん-&gt;お客さん]]</tw-passagedata><tw-passagedata pid="4" name="User response" tags="User" position="700,425" size="100,100">(text-colour:blue)[
 ヘロー `(Hello、helo)`
 ハイ `(Hi、hai)`
 ヘイ `(Hey、hei)`
@@ -53,13 +53,55 @@
 ビゼィ`(Busy, bihzi)`
 意味：忙しい
 
-他</tw-passagedata><tw-passagedata pid="7" name="Good" tags="" position="700,675" size="100,100"></tw-passagedata><tw-passagedata pid="8" name="How are you responses" tags="User" position="400,550" size="100,100">アイムグッド！ユ？`(I&#39;m good, you? aim gud, yu?)`
+他
+
+(t8n-time:0.3s)[[次-&gt;Good]]</tw-passagedata><tw-passagedata pid="7" name="Good" tags="User" position="700,675" size="100,100">ミトゥ `(Me too, mi tu)`
+意味：同じ
+
+グッド！`(Good, gud)`
+意味：元気！
+
+ファイン`(Fine, fain)`
+意味：普通
+
+ビゼィ`(Busy, bihzi)`
+意味：忙しい
+
+他
+
+(t8n-time:0.3s)[[主な会話-&gt;Schmeat]]</tw-passagedata><tw-passagedata pid="8" name="How are you responses" tags="User" position="400,550" size="100,100">アイムグッド！ユ？`(I&#39;m good, you? aim gud, yu?)`
 意味：元気！あなたは？
 
 ビゼィ、ユ？`(Busy, you? bihzi, you?)`
 意味：忙しい！あなたは？
 
-</tw-passagedata></tw-storydata>
+(t8n-time:0.3s)[[次-&gt;End of greeting]]</tw-passagedata><tw-passagedata pid="9" name="End of greeting" tags="Target" position="400,675" size="100,100">ミトゥ`(Me too, mi tu)`
+意味：私も
+
+ビゼィ、ユ？`(Busy, you? bihzi, you?)`
+意味：忙しい！あなたは？
+
+(t8n-time:0.3s)[[主な会話-&gt;Schmeat]]</tw-passagedata><tw-passagedata pid="10" name="Schmeat" tags="User" position="550,775" size="100,100">ハヴゅビンヒャビフォア？`(Have you been here before? hav yu bin hir befor?)`
+意味：来たことありますか？
+
+(t8n-time:0.3s)[[返事-&gt;返事]]</tw-passagedata><tw-passagedata pid="11" name="返事" tags="Target" position="550,900" size="100,100">ヤ・イェ・イェス `(yeah/yes, ya/yes)`
+意味：うん・はい
+(t8n-time:0.3s)[[いいえ-&gt;Yes]]
+
+ノゥ・ナ `(no/nah, no/na)`
+意味：ううん・いいえ
+(t8n-time:0.3s)[[いいえ-&gt;No]]
+</tw-passagedata><tw-passagedata pid="12" name="Yes" tags="User" position="475,1075" size="100,100">ワッキャナイゲチュ？`(what can I get you? wat kan ai ge chu)`
+
+(t8n-time:0.3s)[[注文-&gt;Order]]</tw-passagedata><tw-passagedata pid="13" name="No" tags="User" position="625,1025" size="100,100">(concept)
+
+(t8n-time:0.3s)[[Open-&gt;Yes]]</tw-passagedata><tw-passagedata pid="14" name="Order" tags="Target" position="550,1200" size="100,100">（注文）
+
+(t8n-time:0.3s)[[確認-&gt;確認]]</tw-passagedata><tw-passagedata pid="15" name="確認" tags="User" position="550,1325" size="100,100">（確認）
+
+(t8n-time:0.3s)[[問題ない-&gt;問題ない]]
+
+(t8n-time:0.3s)[[間違い-&gt;間違い]]</tw-passagedata><tw-passagedata pid="16" name="問題ない" tags="Target" position="425,1450" size="100,100">(t8n-time:0.3s)[[ちょっと待って-&gt;ちょっと待って]]</tw-passagedata><tw-passagedata pid="17" name="間違い" tags="Target" position="675,1450" size="100,100">(t8n-time:0.3s)[[確認-&gt;確認]]</tw-passagedata><tw-passagedata pid="18" name="ちょっと待って" tags="User" position="425,1575" size="100,100">いぇい</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
