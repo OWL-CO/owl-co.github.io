@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OWL Consulting Lore</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: #1a1a1a; /* Dark background */
+      color: #00FFFF; /* Neon cyan text */
+      font-family: 'Orbitron', sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 20px;
+    }
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+      text-shadow: 0 0 10px #00FFFF, 0 0 20px #FF69B4;
+    }
+    p {
+      font-size: 1.2rem;
+      line-height: 1.8;
+      max-width: 800px;
+      margin: 20px auto;
+      text-align: justify;
+    }
+    .section {
+      margin: 40px 0;
+    }
+    .footer-link {
+      margin-top: 40px;
+      display: inline-block;
+      text-decoration: none;
+      color: #FF69B4; /* Pink */
+      font-size: 1.2rem;
+      border: 2px solid #FF69B4;
+      padding: 10px 20px;
+      border-radius: 5px;
+      transition: all 0.3s ease;
+    }
+    .footer-link:hover {
+      background: #FF69B4; /* Pink background */
+      color: #000; /* Black text */
+      border-color: #00FFFF; /* Cyan border */
+    }
+    .toggle-button {
+      background: none;
+      border: 2px solid currentColor;
+      color: inherit;
+      padding: 10px 20px;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: all 0.3s ease;
+    }
+    .toggle-button:hover {
+      box-shadow: 0 0 10px #00FFFF, 0 0 30px #FF69B4;
+    }
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <h1 id="header">アウルコンサルティングの話</h1>
+  <button id="toggle-language" class="toggle-button">English</button>
+
+  <div id="japanese-section">
+    <div class="section">
+      <p>
+        予測可能なリズムで動く世界の中で、見慣れないものはしばしば目の前に隠れています。多くの人に見過ごされるパターンが、説明を超えた形でアイデアや瞬間をつなげています。理解は答えからではなく、より深く見ることを促す問いから始まります。平凡の中に複雑さがあり、前に進む道は、無視してしまいがちなものを考慮することを求めています。
+      </p>
+      <p>
+        それは明確な道しるべのある道ではなく、観察し、解釈し、意味を創り出す機会です。各ステップは、確実性ではなく好奇心を通じて次のステップを形作ります。見つかるのは解決策ではなく、視点です—それは反省と洞察を招く見方です。
+      </p>
+      <p>
+        慣れ親しんだものが消え、不確実性が始まるところから始めてください。それぞれの選択、集中の瞬間が未知への一歩です。目的地に到達することではなく、理解の境界線を越えた先に何があるかを発見することが重要です。
+      </p>
+    </div>
+  </div>
+
+  <div id="english-section" class="hidden">
+    <div class="section">
+      <p>
+        In a world that moves in predictable rhythms, the unfamiliar often hides in plain sight. Patterns, overlooked by most, connect ideas and moments in ways that defy explanation. Understanding begins not with answers but with the questions that compel us to look deeper. The ordinary holds complexity, and the path forward asks only that we consider what we might otherwise ignore.
+      </p>
+      <p>
+        This is not a road with clear signposts but a chance to observe, interpret, and create meaning. Each step shapes the next, not through certainty but through curiosity. What emerges is not a solution but a perspective—a way of seeing that invites reflection and insight.
+      </p>
+      <p>
+        Start where the familiar fades and the uncertain begins. Each choice, each moment of focus, is a step into the unknown. It is not about reaching a destination, but about discovering what lies just beyond the edges of what we understand.
+      </p>
+    </div>
+  </div>
+
+  <a href="index.html" class="footer-link">Return to Homepage</a>
+
+  <script>
+    const toggleLanguageButton = document.getElementById("toggle-language");
+    const japaneseSection = document.getElementById("japanese-section");
+    const englishSection = document.getElementById("english-section");
+    const header = document.getElementById("header");
+
+    let currentLanguage = "japanese"; // Default to Japanese
+
+    toggleLanguageButton.addEventListener("click", () => {
+      if (currentLanguage === "japanese") {
+        japaneseSection.classList.add("hidden");
+        englishSection.classList.remove("hidden");
+        header.textContent = "OWL Consulting Lore";
+        toggleLanguageButton.textContent = "日本語";
+        currentLanguage = "english";
+      } else {
+        englishSection.classList.add("hidden");
+        japaneseSection.classList.remove("hidden");
+        header.textContent = "アウルコンサルティングの話";
+        toggleLanguageButton.textContent = "English";
+        currentLanguage = "japanese";
+      }
+    });
+  </script>
+</body>
+</html>

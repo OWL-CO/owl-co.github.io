@@ -1,0 +1,134 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Background and Text Colors */
+body {
+  font-family: 'Orbitron', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff; /* Default to English mode */
+  color: #000; /* Default to English mode */
+}
+
+body.english {
+  background-color: #fff; /* White background */
+  color: #000; /* Black text */
+}
+
+body.japanese {
+  background-color: #000; /* Black background */
+  color: #fff; /* White text */
+}
+
+/* Container Styling */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Header Styling */
+.header {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.logo img {
+  display: block;
+  margin: 0 auto;
+  max-width: 200px;
+  padding-top: 0;
+  transition: all 0.3s ease;
+}
+
+.logo img:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.slogan {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  color: inherit; /* Matches text color */
+  text-align: center;
+}
+
+/* Contact Section */
+.contact {
+  margin-top: 40px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+.contact label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.contact input, .contact textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid currentColor;
+  background: none;
+  color: inherit;
+  font-family: 'Orbitron', sans-serif;
+}
+
+/* Language Toggle Button */
+.toggle-button {
+  background: none;
+  border: 2px solid currentColor;
+  color: inherit;
+  padding: 10px 20px;
+  margin: 10px auto; /* Centering and spacing */
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+/* Glow Effect on Hover */
+.toggle-button:hover {
+  box-shadow: 0 0 10px #00FFFF, 0 0 30px #FF69B4; /* Adds cyan and pink glow */
+  transform: scale(1.1); /* Slight enlargement for emphasis */
+}
+
+/* Bottom Button */
+.cta-button, #send-button {
+  display: inline-block;
+  background: linear-gradient(90deg, #00FFFF, #FF69B4); /* Cyan to pink gradient */
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Hover Effect */
+.cta-button:hover, #send-button:hover {
+  background: linear-gradient(90deg, #FF69B4, #00FFFF); /* Reverse the gradient */
+  box-shadow: 0 0 15px #FF69B4, 0 0 30px #00FFFF; /* Glow effect */
+  color: #fff; /* White text for contrast */
+  transform: scale(1.1); /* Slight enlargement */
+}
+
+
+/* Footer Styling */
+footer {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 0.8rem;
+  color: inherit;
+}
+
