@@ -186,7 +186,7 @@ img#header-logo {
   padding:60px 30px;
 }
 .big-statement::before, .big-statement::after {
-  background-image:url(./assets/wavy-trim.png);
+  background-image:url(./images/wavy-trim.png);
   background-repeat:repeat-x;
   background-size:calc(72px / 1.5) calc(35px / 1.5);
 
